@@ -1,0 +1,17 @@
+<h1>There will be {{count}} words</h1>
+
+<a href="{% url 'home' %}"> start again</a>
+<h1> Your text:</h1>
+
+{{ feedback}}
+
+
+<h2> After Counting:</h2>
+
+{% for word_s, count_s in wordDict%}
+
+{{ word_s}} : {{count_s}}
+<br>
+
+
+{% endfor%}
